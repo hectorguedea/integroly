@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>
+      Integroly: Automatic Ontology Population from Heterogeneous Data Sources
+    </title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css"
+      integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="/tesis">Integroly</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/tesis">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Online Tool</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="documentation.html">Documentation</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="publications.html"
+                  >Related Publications</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main role="main" class="container">
+      <h2>Contact</h2>
+
+      <div class="row">
+        <!-- Section Titile -->
+        <div
+          class="col-md-6 mt-3 contact-widget-section2 wow animated fadeInLeft"
+          data-wow-delay=".2s"
+        >
+          <p>For any information contact us</p>
+
+          <div class="find-widget">
+            <a href="http://hectorguedea.com"
+              >MTI. Héctor Hiram Guedea Noriega</a
+            >
+          </div>
+          <div class="find-widget">
+            <a href="https://webs.um.es/frgarcia/"
+              >Dr. Francisco García Sánchez</a
+            >
+          </div>
+        </div>
+        <!-- contact form -->
+        <div class="col-md-6 wow animated fadeInRight" data-wow-delay=".2s">
+          <form
+            class="shake"
+            role="form"
+            method="post"
+            id="contactForm"
+            name="contact-form"
+            data-toggle="validator"
+          >
+            <!-- Name -->
+            <div class="form-group label-floating">
+              <label class="control-label" for="name">Name</label>
+              <input
+                class="form-control"
+                id="name"
+                type="text"
+                name="name"
+                required
+                data-error="Please enter your name"
+              />
+              <div class="help-block with-errors"></div>
+            </div>
+            <!-- email -->
+            <div class="form-group label-floating">
+              <label class="control-label" for="email">Email</label>
+              <input
+                class="form-control"
+                id="email"
+                type="email"
+                name="email"
+                required
+                data-error="Please enter your Email"
+              />
+              <div class="help-block with-errors"></div>
+            </div>
+            <!-- Subject -->
+            <div class="form-group label-floating">
+              <label class="control-label">Subject</label>
+              <input
+                class="form-control"
+                id="msg_subject"
+                type="text"
+                name="subject"
+                required
+                data-error="Please enter your message subject"
+              />
+              <div class="help-block with-errors"></div>
+            </div>
+            <!-- Message -->
+            <div class="form-group label-floating">
+              <label for="message" class="control-label">Message</label>
+              <textarea
+                class="form-control"
+                rows="3"
+                id="message"
+                name="message"
+                required
+                data-error="Write your message"
+              ></textarea>
+              <div class="help-block with-errors"></div>
+            </div>
+            <!-- Form Submit -->
+            <div class="form-submit mt-5">
+              <button class="btn btn-primary" type="submit" id="form-submit">
+                Send Message
+              </button>
+              <div id="msgSubmit" class="h3 text-center hidden"></div>
+              <div class="clearfix"></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js"
+      integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
