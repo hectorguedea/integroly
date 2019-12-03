@@ -9,13 +9,13 @@ words.forEach(word => {
   wordnet.lookup(word, function(details) {
     details.forEach(function(detail) {
       console.log("------------------------------");
-      console.log("Definition: " + detail.def);
-      console.log("Synonyms: " + detail.synonyms);
+      console.log("Definición: " + detail.def);
+      console.log("Sinonimos: " + detail.synonyms);
       console.log("POS: " + detail.pos);
 
-      // Display examples, if available
+      // Muestra ejemplos, si los hay
       detail.exp.forEach(function(example) {
-        console.log("EXAMPLE: " + example);
+        console.log("EJEMPLO: " + example);
       });
       console.log("------------------------------");
     });
